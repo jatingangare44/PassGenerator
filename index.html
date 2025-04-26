@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html">
+          <img src="favicon.ico" alt="Jatin Logo">
+        </a>
+      </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>Password Generator 🔐</h1>
+
+  <div class="input-group">
+    <label>Password Length:</label>
+    <input type="number" id="length" min="8" max="15" placeholder="8-15">
+  </div>
+
+  <div class="checkbox-group">
+    <label><input type="checkbox" id="uppercase"> Include Uppercase</label>
+    <label><input type="checkbox" id="lowercase"> Include Lowercase</label>
+    <label><input type="checkbox" id="digits"> Include Digits</label>
+    <label><input type="checkbox" id="symbols"> Include Symbols</label>
+  </div>
+
+  <button class="btn" onclick="generatePassword()">Generate Password</button>
+
+  <div id="output">
+    <p><strong>Generated Password:</strong> <span id="password"></span></p>
+    <p><strong>Password Strength:</strong> <span id="strength"></span></p>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 Jatin Gangare | All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="http://www.linkedin.com/in/jatin-gangare" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/jatingangare44" target="_blank">GitHub</a> |
+        <a href="mailto:jatingangare44@gmail.com">Email</a>
+      </div>
+      <p>For inquiries or collaborations, feel free to reach out!</p>
+    </div>
+  </footer>
+  
+<script src="script.js"></script>
+</body>
+</html>
